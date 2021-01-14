@@ -391,14 +391,14 @@ function level17(){
     title.innerHTML = "rechts of links";
     description.innerHTML = "omschrijving:ze zitten achter je aan dus wat ga je doen ga je links of rechts?";
     
-    button1.innerHTML = "rechts";
-    button2.innerHTML = "links";
+    button1.innerHTML = "links";
+    button2.innerHTML = "rechts";
 
     button1.style.display = "inline";
-    button1.onclick = function() {level20()};
+    button1.onclick = function() {level19()};
 
     button2.style.display = "inline";
-    button2.onclick = function() {level19()};
+    button2.onclick = function() {level20()};
     
     button3.style.display = "none";
 
@@ -411,6 +411,43 @@ function level18(){
     title.innerHTML = "game over";
     description.innerHTML = "omschrijving: je bent gepakt";
     
+    button1.innerHTML = "opnieuw spelen";
+
+    button1.style.display = "inline";
+    button1.onclick = function() {start()};
+
+    button2.style.display = "none";
+    
+    button3.style.display = "none";
+
+    inventoryItem.style.display = "none";
+}
+
+function level19(){
+    gameContainer.style.backgroundImage = "url('img/dood.jpg')";
+    console.log("dood");
+    title.innerHTML = "game over";
+    description.innerHTML = "omschrijving: je bent links gegaan maar het loopt dood en hun sluiten je in en maken je dood";
+    
+    button1.innerHTML = "opnieuw spelen";
+
+    button1.style.display = "inline";
+    button1.onclick = function() {start()};
+
+    button2.style.display = "none";
+    
+    button3.style.display = "none";
+
+    inventoryItem.style.display = "none";
+}
+
+function level20(){
+    gameContainer.style.backgroundImage = "url('img/winnen.jpg')";
+    console.log("winnen");
+    title.innerHTML = "je hebt gewonnen";
+    description.innerHTML = "omschrijving: je bent ontkomen en hebt de politie gebeld en de ontvoerders zijn opgepakt";
+    description.style.color = "black";
+
     button1.innerHTML = "opnieuw spelen";
 
     button1.style.display = "inline";
