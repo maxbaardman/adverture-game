@@ -17,8 +17,9 @@ function start(){
     gameContainer.style.backgroundImage = "url('img/busje.jpg')";
     console.log("start");
     title.innerHTML = "ontsnappen van de ontvoerders";
-    description.innerHTML = "omschrijving: je word ontvoerd door 2 mannen. ze nemen je mee naar het bos er zijn twee paden naar het huis van de ontvoerders en je komt van rechts als je van het huis naar de padden kijkt. je ziet een voor deur en een kelder je word mee naar binnen genomen ze brengen je naar zolder. ze binden je handen en voeten vast dus je kan niks doen je kan allen weg komen zonder dood te gaan door goede beslissingen te maken.";
-    description.style.color = "red";
+    title.style.color = "yellow";
+    description.innerHTML = "omschrijving: je word ontvoerd door 2 mannen. ze nemen je mee naar het bos er zijn twee paden naar het huis van de ontvoerders en je komt van rechts als je van het huis naar de paden kijkt. je ziet een voordeur en een kelder. je word mee naar binnen genomen ze brengen je naar zolder. ze binden je handen en voeten vast dus je kan niks doen je kan allen weg komen zonder dood te gaan door goede beslissingen te maken.";
+    description.style.color = "yellow";
     
 
     button1.innerHTML = "start";
@@ -35,8 +36,9 @@ function level1(){
     gameContainer.style.backgroundImage = "url('img/eten.jpg";
     console.log("eten");
     title.innerHTML = "eten";
-    description.innerHTML = "omschrijving: je zit al even vast op zolder je begint te roepen dat je honger hebt een van de twee mannen komt eten brengen met een mes en vork";
-    description.style.color = "red";
+    title.style.color = "blue";
+    description.innerHTML = "omschrijving: je zit al even vast op zolder je begint te roepen dat je honger hebt een van de twee mannen komt eten brengen met een MES en vork";
+    description.style.color = "blue";
 
     button1.innerHTML = "je eten op eten";
     button2.innerHTML = "je zelf los maken";
@@ -71,8 +73,10 @@ function level2(){
     gameContainer.style.backgroundImage = "url('img/dood.jpg')";
     console.log("dood");
     title.innerHTML = "game over";
+    title.style.color = "red";
     description.innerHTML = "omschrijving: je hebt het eten op en er zat vergif in";
-    
+    description.style.color = "red";
+
     button1.innerHTML = "opnieuw spelen";
 
     button1.style.display = "inline";
@@ -89,8 +93,10 @@ function level3(){
     gameContainer.style.backgroundImage = "url('img/touw.jpg')";
     console.log("los");
     title.innerHTML = "je bent los";
+    title.style.color = "yellow";
     description.innerHTML = "omschrijving: je hebt je zelf los gemaakt en eet het eten niet op";
-    
+     description.style.color = "yellow";
+
     button2.innerHTML = "de zolder door zoeken"
 
     button1.style.display = "none";
@@ -107,8 +113,10 @@ function level4(){
     gameContainer.style.backgroundImage = "url('img/dood.jpg')";
     console.log("dood");
     title.innerHTML = "game over";
+    title.style.color = "red";
     description.innerHTML = "omschrijving: je hebt er een vermoord maar de anderen schoot je dood";
-    
+     description.style.color = "red";
+     
     button1.innerHTML = "opnieuw spelen";
 
     button1.style.display = "inline";
@@ -125,8 +133,9 @@ function level5(){
     gameContainer.style.backgroundImage = "url('img/zolder.jpg";
     console.log("zolder");
     title.innerHTML = "de zolder door zoeken";
+    title.style.color = "yellow";
     description.innerHTML = "omschrijving: nou dat je los bent ga je op zolder kijken of je iets kan vinden";
-    description.style.color = "red";
+    description.style.color = "yellow";
 
     button1.innerHTML = "naar de deur gaan";
     button2.innerHTML = "maak de deur open";
@@ -157,8 +166,10 @@ function level6(){
     gameContainer.style.backgroundImage = "url('img/deur.jpg')";
     console.log("deur");
     title.innerHTML = "de deur";
+    title.style.color = "yellow";
     description.innerHTML = "omschrijving: je staat voor een gesloten deur";
-    
+    description.style.color = "yellow";
+
     button1.innerHTML = "terug naar de zolder";
 
     button1.style.display = "inline";
@@ -175,8 +186,10 @@ function level7(){
     gameContainer.style.backgroundImage = "url('img/linksofrechts.jpg')";
     console.log("links of rechts");
     title.innerHTML = "links of rechts";
+    title.style.color = "blue";
     description.innerHTML = "omschrijving: waar ga je heen";
-    
+     description.style.color = "blue";
+
     button1.innerHTML = "links";
     button2.innerHTML = "rechts";
 
@@ -195,8 +208,10 @@ function level8(){
     gameContainer.style.backgroundImage = "url('img/gangnaarkamer.jpg')";
     console.log("gang naar kamer");
     title.innerHTML = "een gang naar een kamer";
+    title.style.color = "yellow";
     description.innerHTML = "omschrijving: ga je de kamer in?";
-    
+     description.style.color = "yellow";
+
     button1.innerHTML = "naar de kamer";
     button2.innerHTML = "terug";
 
@@ -215,8 +230,10 @@ function level9(){
     gameContainer.style.backgroundImage = "url('img/trap.jpg')";
     console.log("gang naar kamer");
     title.innerHTML = "een gang met een trap naar beneden";
+    title.style.color = "yellow";
     description.innerHTML = "omschrijving: ga je naar beneden?";
-    
+     description.style.color = "yellow";
+
     button1.innerHTML = "naar beneden";
     button2.innerHTML = "terug";
 
@@ -235,8 +252,10 @@ function level10(){
     gameContainer.style.backgroundImage = "url('img/kamer.jpg')";
     console.log("de kamer");
     title.innerHTML = "de kamer";
+    title.style.color = "blue";
     description.innerHTML = "omschrijving: je staat in de kamer";
-    
+     description.style.color = "blue";
+
     button2.innerHTML = "terug";
 
     button1.style.display = "none";
@@ -253,8 +272,10 @@ function level11(){
     gameContainer.style.backgroundImage = "url('img/kapstok.jpg')";
     console.log("de kapstok");
     title.innerHTML = "de kapstok";
+    title.style.color = "blue";
     description.innerHTML = "omschrijving: je ziet een kapstok";
-    
+     description.style.color = "blue";
+
     button1.innerHTML = "terug";
     button2.innerHTML = "je hebt de sleutels nu verder";
 
@@ -283,8 +304,10 @@ function level12(){
     gameContainer.style.backgroundImage = "url('img/uitleg.jpg')";
     console.log("uitleg sleutels");
     title.innerHTML = "uitleg sleutels";
+    title.style.color = "blue";
     description.innerHTML = "omschrijving: je hebt nu de sleutels gevonden je ziet een voor deur een een deur naar de kelder toe welke deur ga je kiezen";
-    
+     description.style.color = "blue";
+
     button1.innerHTML = "voordeur"
     button2.innerHTML = "kelder";
 
@@ -303,8 +326,10 @@ function level13(){
     gameContainer.style.backgroundImage = "url('img/dood.jpg')";
     console.log("dood");
     title.innerHTML = "game over";
+    title.style.color = "red";
     description.innerHTML = "omschrijving: je bent naar de voordeur gegaan maar toen je langs de keuken liep hebben ze je gezien en vermoord";
-    
+    description.style.color = "red";
+
     button1.innerHTML = "opnieuw spelen";
 
     button1.style.display = "inline";
@@ -321,8 +346,10 @@ function level14(){
     gameContainer.style.backgroundImage = "url('img/kelder.jpg')";
     console.log("de kelder");
     title.innerHTML = "de kelder";
+    title.style.color = "yellow";
     description.innerHTML = "omschrijving: je bent nu in de kelder";
-    
+    description.style.color = "yellow";
+
     button1.innerHTML = "naar buiten gaan";
     button2.innerHTML = "het briefje lezen";
 
@@ -351,8 +378,10 @@ function level16(){
     gameContainer.style.backgroundImage = "url('img/lezen.jpg')";
     console.log("lezen briefje");
     title.innerHTML = "briefje";
+    title.style.color = "blue";
     description.innerHTML = "omschrijving: onderdelen vervangen van auto";
-    
+    description.style.color = "blue";
+
     button2.innerHTML = "terug";
 
     button1.style.display = "none";
@@ -369,8 +398,10 @@ function level15(){
     gameContainer.style.backgroundImage = "url('img/autooffiets.jpg')";
     console.log("auto of fiets");
     title.innerHTML = "auto of fiets ";
+    title.style.color = "blue";
     description.innerHTML = "omschrijving: pak je de auto of de fiets?";
-    
+    description.style.color = "blue";
+
     button1.innerHTML = "auto";
     button2.innerHTML = "fiets";
 
@@ -389,8 +420,10 @@ function level17(){
     gameContainer.style.backgroundImage = "url('img/linksofrechts.jpg')";
     console.log("rechts of links");
     title.innerHTML = "rechts of links";
+    title.style.color = "blue";
     description.innerHTML = "omschrijving:ze zitten achter je aan dus wat ga je doen ga je links of rechts?";
-    
+    description.style.color = "blue";
+
     button1.innerHTML = "links";
     button2.innerHTML = "rechts";
 
@@ -409,8 +442,10 @@ function level18(){
     gameContainer.style.backgroundImage = "url('img/dood.jpg')";
     console.log("dood");
     title.innerHTML = "game over";
+    title.style.color = "red";
     description.innerHTML = "omschrijving: je bent gepakt";
-    
+    description.style.color = "red";
+
     button1.innerHTML = "opnieuw spelen";
 
     button1.style.display = "inline";
@@ -427,7 +462,9 @@ function level19(){
     gameContainer.style.backgroundImage = "url('img/dood.jpg')";
     console.log("dood");
     title.innerHTML = "game over";
+    title.style.color = "red";
     description.innerHTML = "omschrijving: je bent links gegaan maar het loopt dood en hun sluiten je in en maken je dood";
+    description.style.color = "red";
     
     button1.innerHTML = "opnieuw spelen";
 
@@ -445,8 +482,9 @@ function level20(){
     gameContainer.style.backgroundImage = "url('img/winnen.jpg')";
     console.log("winnen");
     title.innerHTML = "je hebt gewonnen";
+    title.style.color = "blue";
     description.innerHTML = "omschrijving: je bent ontkomen en hebt de politie gebeld en de ontvoerders zijn opgepakt";
-    description.style.color = "black";
+    description.style.color = "blue";
 
     button1.innerHTML = "opnieuw spelen";
 
