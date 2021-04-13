@@ -14,6 +14,7 @@ var inventoryItem = document.getElementById("inventoryItem");
 start();
 
 function start(){
+    oppakken = {mes:false, breekijzer:false, sleutels:false, briefje:false, };
     gameContainer.style.backgroundImage = "url('img/busje.jpg')";
     console.log("start");
     title.innerHTML = "ontsnappen van de ontvoerders";
@@ -51,7 +52,7 @@ function level1(){
     button2.onclick = function() {level3()};
 
     button3.style.display = "inline";
-    button3.onclick = function() {level4()};
+    button3.onclick = level4;
 
     inventoryItem.style.display = "inline";
     inventoryItem.src = "img/mes.jpg"
@@ -63,6 +64,7 @@ function level1(){
     if (oppakken["mes"] == true) {
         button2.style.display = "inline-block";
         button3.style.display = "inline-block";
+        inventoryItem.style.display = "none";
     } else {
         button2.style.display = "none";
         button3.style.display = "none"; 
@@ -158,6 +160,7 @@ function level5(){
 
     if (oppakken["breekijzer"] == true) {
         button2.style.display = "inline-block";
+        inventoryItem.style.display = "none";
     } else {
         button2.style.display = "none";
     } 
@@ -295,6 +298,7 @@ function level11(){
     };
     if (oppakken["sleutels"] == true) {
         button2.style.display = "inline-block";
+        inventoryItem.style.display = "none";
     } else {
         button2.style.display = "none";
     }
@@ -369,6 +373,7 @@ function level14(){
     };
     if (oppakken["briefje"] == true) {
         button2.style.display = "inline-block";
+        inventoryItem.style.display = "none";
     } else {
         button2.style.display = "none";
     }
@@ -378,9 +383,9 @@ function level16(){
     gameContainer.style.backgroundImage = "url('img/lezen.jpg')";
     console.log("lezen briefje");
     title.innerHTML = "briefje";
-    title.style.color = "blue";
+    title.style.color = "red";
     description.innerHTML = "omschrijving: onderdelen vervangen van auto";
-    description.style.color = "blue";
+    description.style.color = "red";
 
     button2.innerHTML = "terug";
 
